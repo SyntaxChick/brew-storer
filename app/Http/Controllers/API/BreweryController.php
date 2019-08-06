@@ -13,4 +13,10 @@ class BreweryController extends Controller
         return response()->json(Brewery::all()); 
     }
     
+    public function brewery(Brewery $brewery)
+    {
+        
+        return response()->json($brewery);
+    }
+    
 }

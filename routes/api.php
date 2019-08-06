@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('breweries', 'API\BreweryController@breweries');
+Route::get('brewery/{brewery}', 'API\BreweryController@brewery');
+Route::get('search/{query}', 'API\BreweryController@search');
